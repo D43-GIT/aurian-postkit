@@ -1,0 +1,349 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aurian Haus · Post Kit</title>
+<style>
+:root{--paper:#F2EADA;--raised:#fbf6ec;--ink:#1a1712;--muted:#6b6152;--brass:#C9A66B;--line:#e2d7c2;--good:#3f7d54;}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{background:var(--paper);color:var(--ink);font-family:-apple-system,Inter,system-ui,sans-serif;line-height:1.5;padding:16px 12px 60px;max-width:640px;margin:auto;font-size:15px}
+h1{font-family:Georgia,serif;font-size:26px;margin-bottom:2px}
+.sub{font-family:ui-monospace,monospace;font-size:11px;color:var(--muted);letter-spacing:.06em;margin-bottom:14px}
+.tip{background:var(--raised);border:1px solid var(--brass);border-radius:12px;padding:11px 14px;font-size:13px;margin-bottom:16px}
+.card{background:var(--raised);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:14px}
+.chead{display:flex;gap:10px;align-items:center;margin-bottom:8px}
+.num{font-family:ui-monospace,monospace;font-weight:700;background:var(--brass);color:#161311;border-radius:7px;padding:3px 9px;font-size:13px}
+.ptitle{font-family:ui-monospace,monospace;font-weight:600;font-size:14px}
+.pmeta{font-size:11px;color:var(--muted);font-family:ui-monospace,monospace}
+.media{font-size:11.5px;color:var(--muted);background:#fffdf8;border:1px dashed var(--line);border-radius:8px;padding:7px 10px;margin-bottom:10px}
+.tabs{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px}
+.tab{font-family:ui-monospace,monospace;font-size:11px;padding:6px 11px;border:1px solid var(--line);border-radius:7px;background:#fffdf8;color:var(--muted)}
+.tab.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.pane{display:none}.pane.on{display:block}
+.fieldlab{font-family:ui-monospace,monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--brass);margin:8px 0 3px}
+.copybox{position:relative;background:#fffdf8;border:1px solid var(--line);border-radius:9px;padding:11px 52px 11px 12px;font-size:14px;white-space:pre-wrap;cursor:pointer}
+.copybox.mono{font-family:ui-monospace,monospace;font-size:12.5px}
+.copybox.sm{font-size:12.5px;padding:8px 48px 8px 10px}
+.cpbtn{position:absolute;top:8px;right:8px;font-family:ui-monospace,monospace;font-size:9.5px;font-weight:700;color:#161311;background:var(--brass);border-radius:6px;padding:5px 8px}
+.copybox.done .cpbtn{background:var(--good);color:#fff}
+.altrow{display:flex;gap:7px;align-items:flex-start;margin:5px 0}
+.altn{font-family:ui-monospace,monospace;font-size:11px;color:var(--muted);margin-top:9px;min-width:16px}
+details.alts{margin-top:8px}
+summary{font-family:ui-monospace,monospace;font-size:11px;color:var(--brass);cursor:pointer;padding:4px 0}
+</style></head><body>
+<h1>Post Kit</h1>
+<div class="sub">AURIAN HAUS · 14 POSTS · TAP ANY BOX TO COPY</div>
+<div class="tip"><b>How to use:</b> AirDrop the media from the folder on your Mac (files are numbered to match each post). Here, pick the platform tab, tap a box to copy the caption / hashtags / alt text, paste into the app. Schedule per the times shown.</div>
+<div class="card">
+  <div class="chead"><span class="num">01</span><div><div class="ptitle">pin-reveal</div><div class="pmeta">carousel · Thu 16 Jul, 8:00 AM</div></div></div>
+  <div class="media">📎 AirDrop: <b>01_pin-reveal_slide-01…06</b> · 6 items · Instagram, Facebook, TikTok, LinkedIn</div>
+  <div class="tabs"><button class="tab on" onclick="tab(this,'pin-reveal','instagram')">Instagram</button><button class="tab " onclick="tab(this,'pin-reveal','tiktok')">TikTok</button><button class="tab " onclick="tab(this,'pin-reveal','facebook')">Facebook</button><button class="tab " onclick="tab(this,'pin-reveal','linkedin')">LinkedIn</button></div>
+  <div class="pane on" data-post="pin-reveal" data-plat="instagram"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Every one of these looks like it was shot on a phone. None of it was.
+
+No studio, no shoot day, no camera. Real product content for real brands, made by two people who actually know what good looks like.
+
+Swipe the range, and comment HAUS if you sell a product and want yours<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #aiugc #ugcads #ecommercecontent #productvideo<span class="cpbtn">copy</span></div></div><div class="pane " data-post="pin-reveal" data-plat="tiktok"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">POV: none of these ads were ever filmed. No studio, no camera, no shoot day.
+
+Made from one product photo. No shoot, no studio.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aiugc #contentcreator #ecommercetips #creativestudio #aicreative<span class="cpbtn">copy</span></div></div><div class="pane " data-post="pin-reveal" data-plat="facebook"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Every one of these looks like it was shot on a phone. None of it was.
+
+No studio, no shoot day, no camera. Real product content for real brands, made by two people who actually know what good looks like.
+
+Swipe the range, and comment HAUS if you sell a product and want yours
+
+See the range → aurianhaus.com<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #creativestudio #aicreative<span class="cpbtn">copy</span></div></div><div class="pane " data-post="pin-reveal" data-plat="linkedin"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Every frame in this carousel is ad creative for real e-commerce products, made by two people with over a decade of hands-on production between us. No studio, no shoot day, no camera. You send one product photo, we send back a full set of video and stills, in days not weeks. AI makes the pixels, we make the calls and check every frame.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #Ecommerce #ContentStrategy<span class="cpbtn">copy</span></div></div>
+  <div class="fieldlab">First comment</div><div class="copybox" onclick="cp(this)">#aurianhaus #aiugc #ugcads #ecommercecontent #productvideo<span class="cpbtn">copy</span></div>
+  <details class="alts"><summary>Alt text · 6 slides</summary><div class="altrow"><span class="altn">1</span><div class="copybox sm" onclick="cp(this)">AI-generated UGC of a woman using the Aurian red light belt in bed, none filmed<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">2</span><div class="copybox sm" onclick="cp(this)">AI-generated reel of a woman resting in a silk sleep mask, airport to calm<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">3</span><div class="copybox sm" onclick="cp(this)">AI-generated split reel, ironing versus a handheld garment steamer<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">4</span><div class="copybox sm" onclick="cp(this)">AI-generated hyper motion of a berry smoothie in the Aurian blender<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">5</span><div class="copybox sm" onclick="cp(this)">Type slide: No studio. No shoot day. No camera.<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">6</span><div class="copybox sm" onclick="cp(this)">Type slide: We are Aurian Haus. Follow to see how.<span class="cpbtn">copy</span></div></div></details>
+</div><div class="card">
+  <div class="chead"><span class="num">02</span><div><div class="ptitle">pin-campaign</div><div class="pmeta">carousel · Thu 16 Jul, 12:30 PM</div></div></div>
+  <div class="media">📎 AirDrop: <b>02_pin-campaign_slide-01…08</b> · 8 items · Instagram, Facebook, TikTok, LinkedIn</div>
+  <div class="tabs"><button class="tab on" onclick="tab(this,'pin-campaign','instagram')">Instagram</button><button class="tab " onclick="tab(this,'pin-campaign','tiktok')">TikTok</button><button class="tab " onclick="tab(this,'pin-campaign','facebook')">Facebook</button><button class="tab " onclick="tab(this,'pin-campaign','linkedin')">LinkedIn</button></div>
+  <div class="pane on" data-post="pin-campaign" data-plat="instagram"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">You send one phone photo of your product. We send back a full set: hero shots, lifestyle, video ads. In days.
+
+No studio to book, no crew, no waiting three weeks for a couple of usable frames.
+
+Save this for your next drop, then send us the product. Comment HAUS<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #productphotography #aicontentcreation #dtcmarketing #contentstudio<span class="cpbtn">copy</span></div></div><div class="pane " data-post="pin-campaign" data-plat="tiktok"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">One phone photo of your product goes in. A full ad campaign comes out.
+
+Made from one product photo. No shoot, no studio.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aiugc #contentcreator #ecommercetips #productphotography #contentcreation<span class="cpbtn">copy</span></div></div><div class="pane " data-post="pin-campaign" data-plat="facebook"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">You send one phone photo of your product. We send back a full set: hero shots, lifestyle, video ads. In days.
+
+No studio to book, no crew, no waiting three weeks for a couple of usable frames.
+
+Save this for your next drop, then send us the product. Comment HAUS
+
+See the range → aurianhaus.com<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #productphotography #contentcreation<span class="cpbtn">copy</span></div></div><div class="pane " data-post="pin-campaign" data-plat="linkedin"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">A studio shoot costs weeks and thousands, and you still walk away with a handful of usable frames. We turn a single product photo into hero stills, lifestyle scenes and video ads, delivered in days. If you sell a physical product, this is the fastest route from packshot to paid-ad-ready creative.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #Ecommerce #ContentStrategy<span class="cpbtn">copy</span></div></div>
+  <div class="fieldlab">First comment</div><div class="copybox" onclick="cp(this)">#aurianhaus #productphotography #aicontentcreation #dtcmarketing #contentstudio<span class="cpbtn">copy</span></div>
+  <details class="alts"><summary>Alt text · 8 slides</summary><div class="altrow"><span class="altn">1</span><div class="copybox sm" onclick="cp(this)">Before and after, a raw iPhone product photo beside a polished AI hero shot<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">2</span><div class="copybox sm" onclick="cp(this)">Type slide: Studio shoots cost weeks, and thousands.<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">3</span><div class="copybox sm" onclick="cp(this)">Type slide: And you still get a few usable frames.<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">4</span><div class="copybox sm" onclick="cp(this)">A raw iPhone photo of the Aurian blender in its box on a kitchen counter<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">5</span><div class="copybox sm" onclick="cp(this)">AI hero shot of the Aurian blender with a berry splash on gold<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">6</span><div class="copybox sm" onclick="cp(this)">Lifestyle shot of a woman adding berries to the Aurian blender<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">7</span><div class="copybox sm" onclick="cp(this)">AI-generated UGC of a woman reviewing the Aurian portable blender<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">8</span><div class="copybox sm" onclick="cp(this)">Type slide: One product. A whole set. Save this, send us yours.<span class="cpbtn">copy</span></div></div></details>
+</div><div class="card">
+  <div class="chead"><span class="num">03</span><div><div class="ptitle">pin-founders</div><div class="pmeta">carousel · Thu 16 Jul, 5:00 PM</div></div></div>
+  <div class="media">📎 AirDrop: <b>03_pin-founders_slide-01…07</b> · 7 items · Instagram, Facebook, TikTok, LinkedIn</div>
+  <div class="tabs"><button class="tab on" onclick="tab(this,'pin-founders','instagram')">Instagram</button><button class="tab " onclick="tab(this,'pin-founders','tiktok')">TikTok</button><button class="tab " onclick="tab(this,'pin-founders','facebook')">Facebook</button><button class="tab " onclick="tab(this,'pin-founders','linkedin')">LinkedIn</button></div>
+  <div class="pane on" data-post="pin-founders" data-plat="instagram"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Two humans, one machine.
+
+Between us that&#x27;s ten-plus years of actually making content. Shoots, edits, real clients. Now we point all of that at AI and direct it. The AI makes the pixels, we make the calls and check every frame.
+
+You&#x27;ll get a real person replying, not a bot. Have a look at aurianhaus.com<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #creativestudio #aicreative #founderstory #brandcontent<span class="cpbtn">copy</span></div></div><div class="pane " data-post="pin-founders" data-plat="tiktok"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Meet the two humans behind the AI ad studio. The machine makes the pixels. We make the taste.
+
+Made from one product photo. No shoot, no studio.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aiugc #contentcreator #ecommercetips #creativestudio #aicreative<span class="cpbtn">copy</span></div></div><div class="pane " data-post="pin-founders" data-plat="facebook"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Two humans, one machine.
+
+Between us that&#x27;s ten-plus years of actually making content. Shoots, edits, real clients. Now we point all of that at AI and direct it. The AI makes the pixels, we make the calls and check every frame.
+
+You&#x27;ll get a real person replying, not a bot. Have a look at aurianhaus.com
+
+See the range → aurianhaus.com<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #creativestudio #aicreative<span class="cpbtn">copy</span></div></div><div class="pane " data-post="pin-founders" data-plat="linkedin"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Aurian Haus is two founders with over ten years of hands-on content production, now directing AI ad creative for premium product brands. AI generates the frames; we bring the direction, the taste and a human eye on every frame. You send one product photo, we build the content, checked by people who have actually shot the real thing.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #Ecommerce #ContentStrategy<span class="cpbtn">copy</span></div></div>
+  <div class="fieldlab">First comment</div><div class="copybox" onclick="cp(this)">#aurianhaus #creativestudio #aicreative #founderstory #brandcontent<span class="cpbtn">copy</span></div>
+  <details class="alts"><summary>Alt text · 7 slides</summary><div class="altrow"><span class="altn">1</span><div class="copybox sm" onclick="cp(this)">The two founders of Aurian Haus standing together<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">2</span><div class="copybox sm" onclick="cp(this)">Founder Brandon Hansen, from directing music videos and premium brand events<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">3</span><div class="copybox sm" onclick="cp(this)">Founder Jurgen Hansen, luxury real estate and lifestyle cinematography<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">4</span><div class="copybox sm" onclick="cp(this)">Behind the scenes, footage reviewed by a window, every frame checked by a human<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">5</span><div class="copybox sm" onclick="cp(this)">Behind the scenes, colour grading AI footage on a monitor<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">6</span><div class="copybox sm" onclick="cp(this)">Type slide: Done-for-you ad creative, from one product photo<span class="cpbtn">copy</span></div></div><div class="altrow"><span class="altn">7</span><div class="copybox sm" onclick="cp(this)">Type slide: DM us HAUS, or visit aurianhaus.com<span class="cpbtn">copy</span></div></div></details>
+</div><div class="card">
+  <div class="chead"><span class="num">04</span><div><div class="ptitle">f-belt-cramps</div><div class="pmeta">reel · Fri 17 Jul, 8:00 AM</div></div></div>
+  <div class="media">📎 AirDrop: <b>04_f-belt-cramps</b> · 1 item · Instagram, Facebook, TikTok, LinkedIn, YT Shorts</div>
+  <div class="tabs"><button class="tab on" onclick="tab(this,'f-belt-cramps','instagram')">Instagram</button><button class="tab " onclick="tab(this,'f-belt-cramps','tiktok')">TikTok</button><button class="tab " onclick="tab(this,'f-belt-cramps','facebook')">Facebook</button><button class="tab " onclick="tab(this,'f-belt-cramps','linkedin')">LinkedIn</button><button class="tab " onclick="tab(this,'f-belt-cramps','youtube')">YT Shorts</button></div>
+  <div class="pane on" data-post="f-belt-cramps" data-plat="instagram"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Feels like a mate filmed it, yeah? That&#x27;s the point.
+
+This cramp-relief reel started life as one product photo. No creator booked, no shoot, brand-safe and ready in days. UGC that actually gets trusted, because it feels real.
+
+Want one on your product?<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #productads #ecommercemarketing #UGCads #aurianhaus<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-belt-cramps" data-plat="tiktok"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Some content just feels like a friend filmed it. This cramp-relief reel started as ONE product photo.
+
+Made from one product photo. No shoot, no studio.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aiugc #contentcreator #ecommercetips #redlighttherapy #wellnesstech<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-belt-cramps" data-plat="facebook"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Feels like a mate filmed it, yeah? That&#x27;s the point.
+
+This cramp-relief reel started life as one product photo. No creator booked, no shoot, brand-safe and ready in days. UGC that actually gets trusted, because it feels real.
+
+Want one on your product?
+
+See the range → aurianhaus.com<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #redlighttherapy #wellnesstech<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-belt-cramps" data-plat="linkedin"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Relatable, phone-real UGC is what actually converts for wellness brands, and this cramp-relief reel began as a single product photo. No creator booked, no shoot day, brand-safe and ready in days. This is the everyday content most DTC brands need on repeat, made for you.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #Ecommerce #ContentStrategy<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-belt-cramps" data-plat="youtube"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Feels like a mate filmed it, yeah? That&#x27;s the point.
+
+This cramp-relief reel started life as one product photo. No creator booked, no shoot, brand-safe and ready in days. UGC that actually gets trusted, because it feels real.
+
+Want one on your product?
+
+#Shorts<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#Shorts #redlighttherapy #wellnesstech<span class="cpbtn">copy</span></div></div>
+  <div class="fieldlab">First comment</div><div class="copybox" onclick="cp(this)">#AIcontent #productads #ecommercemarketing #UGCads #aurianhaus<span class="cpbtn">copy</span></div>
+  <details class="alts"><summary>Alt text · 1 slides</summary><div class="altrow"><span class="altn">1</span><div class="copybox sm" onclick="cp(this)">Woman resting in bed in a white tee, talking to camera, UGC period-cramp relief reel<span class="cpbtn">copy</span></div></div></details>
+</div><div class="card">
+  <div class="chead"><span class="num">05</span><div><div class="ptitle">feed-sol-hero</div><div class="pmeta">image · Fri 17 Jul, 12:30 PM</div></div></div>
+  <div class="media">📎 AirDrop: <b>05_feed-sol-hero</b> · 1 item · Instagram, Facebook, TikTok, LinkedIn</div>
+  <div class="tabs"><button class="tab on" onclick="tab(this,'feed-sol-hero','instagram')">Instagram</button><button class="tab " onclick="tab(this,'feed-sol-hero','tiktok')">TikTok</button><button class="tab " onclick="tab(this,'feed-sol-hero','facebook')">Facebook</button><button class="tab " onclick="tab(this,'feed-sol-hero','linkedin')">LinkedIn</button></div>
+  <div class="pane on" data-post="feed-sol-hero" data-plat="instagram"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">The blender, caught mid-pour.
+
+Real motion, real light, all from one flat packshot. This is the frame you build a paid ad around.
+
+Product brand? This is the easiest thing we make<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AurianHaus #productphotography #AIcontent #ecommerce #productads<span class="cpbtn">copy</span></div></div><div class="pane " data-post="feed-sol-hero" data-plat="tiktok"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">The portable blender, caught mid-pour. The splash, the berries, the light: all generated.
+
+Made from one product photo. No shoot, no studio.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aiugc #contentcreator #ecommercetips #portableblender #smoothietok<span class="cpbtn">copy</span></div></div><div class="pane " data-post="feed-sol-hero" data-plat="facebook"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">The blender, caught mid-pour.
+
+Real motion, real light, all from one flat packshot. This is the frame you build a paid ad around.
+
+Product brand? This is the easiest thing we make
+
+See the range → aurianhaus.com<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #portableblender #smoothietok<span class="cpbtn">copy</span></div></div><div class="pane " data-post="feed-sol-hero" data-plat="linkedin"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">A product hero shot with real motion, generated from one packshot: the splash, the berries, the gold light. This is the anchor frame for a paid ad or a campaign, made without a studio. Hero imagery for product brands, no photographer required.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #Ecommerce #ContentStrategy<span class="cpbtn">copy</span></div></div>
+  <div class="fieldlab">First comment</div><div class="copybox" onclick="cp(this)">#AurianHaus #productphotography #AIcontent #ecommerce #productads<span class="cpbtn">copy</span></div>
+  <details class="alts"><summary>Alt text · 1 slides</summary><div class="altrow"><span class="altn">1</span><div class="copybox sm" onclick="cp(this)">AURIAN cream and gold portable blender mid blend, pink berry smoothie splashing over gold light<span class="cpbtn">copy</span></div></div></details>
+</div><div class="card">
+  <div class="chead"><span class="num">06</span><div><div class="ptitle">f-somme-calm</div><div class="pmeta">reel · Fri 17 Jul, 5:00 PM</div></div></div>
+  <div class="media">📎 AirDrop: <b>06_f-somme-calm</b> · 1 item · Instagram, Facebook, TikTok, LinkedIn, YT Shorts</div>
+  <div class="tabs"><button class="tab on" onclick="tab(this,'f-somme-calm','instagram')">Instagram</button><button class="tab " onclick="tab(this,'f-somme-calm','tiktok')">TikTok</button><button class="tab " onclick="tab(this,'f-somme-calm','facebook')">Facebook</button><button class="tab " onclick="tab(this,'f-somme-calm','linkedin')">LinkedIn</button><button class="tab " onclick="tab(this,'f-somme-calm','youtube')">YT Shorts</button></div>
+  <div class="pane on" data-post="f-somme-calm" data-plat="instagram"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">One unbroken shot, restless to calm.
+
+A silk sleep mask, shot like a fragrance ad. Except there was no shoot. The model, the room, the light, all generated. Campaign-grade, no campaign.
+
+This is the kind of thing we make for premium wellness brands<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #productads #ecommercemarketing #UGCads #aurianhaus<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-somme-calm" data-plat="tiktok"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">One unbroken shot, from restless to calm. A silk sleep mask, filmed like a fragrance ad.
+
+Made from one product photo. No shoot, no studio.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aiugc #contentcreator #ecommercetips #sleepmask #sleepwellness<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-somme-calm" data-plat="facebook"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">One unbroken shot, restless to calm.
+
+A silk sleep mask, shot like a fragrance ad. Except there was no shoot. The model, the room, the light, all generated. Campaign-grade, no campaign.
+
+This is the kind of thing we make for premium wellness brands
+
+See the range → aurianhaus.com<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #sleepmask #sleepwellness<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-somme-calm" data-plat="linkedin"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">A silk sleep mask, shot like a fragrance campaign, in one unbroken take. The model, the room, the golden light, all generated, no shoot day. Campaign-grade content for premium wellness brands, without the campaign.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #Ecommerce #ContentStrategy<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-somme-calm" data-plat="youtube"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">One unbroken shot, restless to calm.
+
+A silk sleep mask, shot like a fragrance ad. Except there was no shoot. The model, the room, the light, all generated. Campaign-grade, no campaign.
+
+This is the kind of thing we make for premium wellness brands
+
+#Shorts<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#Shorts #sleepmask #sleepwellness<span class="cpbtn">copy</span></div></div>
+  <div class="fieldlab">First comment</div><div class="copybox" onclick="cp(this)">#AIcontent #productads #ecommercemarketing #UGCads #aurianhaus<span class="cpbtn">copy</span></div>
+  <details class="alts"><summary>Alt text · 1 slides</summary><div class="altrow"><span class="altn">1</span><div class="copybox sm" onclick="cp(this)">Close-up of a woman resting in a champagne silk sleep mask with a gold buckle strap 😌<span class="cpbtn">copy</span></div></div></details>
+</div><div class="card">
+  <div class="chead"><span class="num">07</span><div><div class="ptitle">feed-somme-lifestyle</div><div class="pmeta">image · Sat 18 Jul, 8:00 AM</div></div></div>
+  <div class="media">📎 AirDrop: <b>07_feed-somme-lifestyle</b> · 1 item · Instagram, Facebook, TikTok, LinkedIn</div>
+  <div class="tabs"><button class="tab on" onclick="tab(this,'feed-somme-lifestyle','instagram')">Instagram</button><button class="tab " onclick="tab(this,'feed-somme-lifestyle','tiktok')">TikTok</button><button class="tab " onclick="tab(this,'feed-somme-lifestyle','facebook')">Facebook</button><button class="tab " onclick="tab(this,'feed-somme-lifestyle','linkedin')">LinkedIn</button></div>
+  <div class="pane on" data-post="feed-somme-lifestyle" data-plat="instagram"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Slow morning, soft light, silk mask. None of it happened.
+
+The frame that used to need a photographer, a stylist and a location, made from one reference photo.
+
+Premium wellness content with the whole production skipped<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AurianHaus #brandphotography #AIcontent #wellnessbrand #lifestylecontent<span class="cpbtn">copy</span></div></div><div class="pane " data-post="feed-somme-lifestyle" data-plat="tiktok"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Slow mornings, sold softly. A silk sleep mask in golden light, generated end to end.
+
+Made from one product photo. No shoot, no studio.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aiugc #contentcreator #ecommercetips #sleepmask #sleepwellness<span class="cpbtn">copy</span></div></div><div class="pane " data-post="feed-somme-lifestyle" data-plat="facebook"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Slow morning, soft light, silk mask. None of it happened.
+
+The frame that used to need a photographer, a stylist and a location, made from one reference photo.
+
+Premium wellness content with the whole production skipped
+
+See the range → aurianhaus.com<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #sleepmask #sleepwellness<span class="cpbtn">copy</span></div></div><div class="pane " data-post="feed-somme-lifestyle" data-plat="linkedin"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Editorial lifestyle imagery for premium wellness brands, generated end to end. The kind of frame that used to need a photographer, a stylist and a location, now made from a single reference photo.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #Ecommerce #ContentStrategy<span class="cpbtn">copy</span></div></div>
+  <div class="fieldlab">First comment</div><div class="copybox" onclick="cp(this)">#AurianHaus #brandphotography #AIcontent #wellnessbrand #lifestylecontent<span class="cpbtn">copy</span></div>
+  <details class="alts"><summary>Alt text · 1 slides</summary><div class="altrow"><span class="altn">1</span><div class="copybox sm" onclick="cp(this)">Woman resting in silk pyjamas and a champagne sleep mask in warm golden light, editorial bedroom<span class="cpbtn">copy</span></div></div></details>
+</div><div class="card">
+  <div class="chead"><span class="num">08</span><div><div class="ptitle">f-sol-berry</div><div class="pmeta">reel · Sat 18 Jul, 12:30 PM</div></div></div>
+  <div class="media">📎 AirDrop: <b>08_f-sol-berry</b> · 1 item · Instagram, Facebook, TikTok, LinkedIn, YT Shorts</div>
+  <div class="tabs"><button class="tab on" onclick="tab(this,'f-sol-berry','instagram')">Instagram</button><button class="tab " onclick="tab(this,'f-sol-berry','tiktok')">TikTok</button><button class="tab " onclick="tab(this,'f-sol-berry','facebook')">Facebook</button><button class="tab " onclick="tab(this,'f-sol-berry','linkedin')">LinkedIn</button><button class="tab " onclick="tab(this,'f-sol-berry','youtube')">YT Shorts</button></div>
+  <div class="pane on" data-post="f-sol-berry" data-plat="instagram"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">A berry smoothie mid-explosion. Not one frame of it was filmed.
+
+The fruit, the splash, the blender, all pulled from a single product photo. This is what stops a thumb, with no set and no reshoots.
+
+Food or drink brand? We&#x27;ll show you yours<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #productads #ecommercemarketing #UGCads #aurianhaus<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-sol-berry" data-plat="tiktok"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">A berry smoothie, caught mid-explosion. None of it was filmed.
+
+Made from one product photo. No shoot, no studio.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aiugc #contentcreator #ecommercetips #portableblender #smoothietok<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-sol-berry" data-plat="facebook"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">A berry smoothie mid-explosion. Not one frame of it was filmed.
+
+The fruit, the splash, the blender, all pulled from a single product photo. This is what stops a thumb, with no set and no reshoots.
+
+Food or drink brand? We&#x27;ll show you yours
+
+See the range → aurianhaus.com<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #portableblender #smoothietok<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-sol-berry" data-plat="linkedin"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Hyper-motion product film, generated from one photo: the fruit, the splash, the light, the blender. This is how a food or drink brand stops the scroll, with no set, no crew and no reshoots. Product films built in days, not weeks.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #Ecommerce #ContentStrategy<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-sol-berry" data-plat="youtube"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">A berry smoothie mid-explosion. Not one frame of it was filmed.
+
+The fruit, the splash, the blender, all pulled from a single product photo. This is what stops a thumb, with no set and no reshoots.
+
+Food or drink brand? We&#x27;ll show you yours
+
+#Shorts<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#Shorts #portableblender #smoothietok<span class="cpbtn">copy</span></div></div>
+  <div class="fieldlab">First comment</div><div class="copybox" onclick="cp(this)">#AIcontent #productads #ecommercemarketing #UGCads #aurianhaus<span class="cpbtn">copy</span></div>
+  <details class="alts"><summary>Alt text · 1 slides</summary><div class="altrow"><span class="altn">1</span><div class="copybox sm" onclick="cp(this)">AURIAN cream and gold portable blender full of berry smoothie on a marble counter 🫐<span class="cpbtn">copy</span></div></div></details>
+</div><div class="card">
+  <div class="chead"><span class="num">09</span><div><div class="ptitle">feed-belt-lifestyle</div><div class="pmeta">image · Sat 18 Jul, 5:00 PM</div></div></div>
+  <div class="media">📎 AirDrop: <b>09_feed-belt-lifestyle</b> · 1 item · Instagram, Facebook, TikTok, LinkedIn</div>
+  <div class="tabs"><button class="tab on" onclick="tab(this,'feed-belt-lifestyle','instagram')">Instagram</button><button class="tab " onclick="tab(this,'feed-belt-lifestyle','tiktok')">TikTok</button><button class="tab " onclick="tab(this,'feed-belt-lifestyle','facebook')">Facebook</button><button class="tab " onclick="tab(this,'feed-belt-lifestyle','linkedin')">LinkedIn</button></div>
+  <div class="pane on" data-post="feed-belt-lifestyle" data-plat="instagram"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Twenty minutes, eyes shut, belt on. The product where it actually lives.
+
+In-context content that shows someone using the thing, made from a single reference. Calm, believable, brand-safe.
+
+Want yours shown in context?<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AurianHaus #wellnesstech #AIcontent #lifestylecontent #productads<span class="cpbtn">copy</span></div></div><div class="pane " data-post="feed-belt-lifestyle" data-plat="tiktok"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Twenty minutes on the clock, eyes closed. The red-light belt in its natural habitat.
+
+Made from one product photo. No shoot, no studio.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aiugc #contentcreator #ecommercetips #redlighttherapy #wellnesstech<span class="cpbtn">copy</span></div></div><div class="pane " data-post="feed-belt-lifestyle" data-plat="facebook"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Twenty minutes, eyes shut, belt on. The product where it actually lives.
+
+In-context content that shows someone using the thing, made from a single reference. Calm, believable, brand-safe.
+
+Want yours shown in context?
+
+See the range → aurianhaus.com<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #redlighttherapy #wellnesstech<span class="cpbtn">copy</span></div></div><div class="pane " data-post="feed-belt-lifestyle" data-plat="linkedin"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">In-context lifestyle content that shows a product actually being used, generated from a single reference. Calm, believable and brand-safe, the everyday frame a wellness brand needs for the feed or the story.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #Ecommerce #ContentStrategy<span class="cpbtn">copy</span></div></div>
+  <div class="fieldlab">First comment</div><div class="copybox" onclick="cp(this)">#AurianHaus #wellnesstech #AIcontent #lifestylecontent #productads<span class="cpbtn">copy</span></div>
+  <details class="alts"><summary>Alt text · 1 slides</summary><div class="altrow"><span class="altn">1</span><div class="copybox sm" onclick="cp(this)">Woman reclining in bed in cream loungewear wearing the AURIAN red light therapy belt, tea on the nightstand<span class="cpbtn">copy</span></div></div></details>
+</div><div class="card">
+  <div class="chead"><span class="num">10</span><div><div class="ptitle">f-vibe-split</div><div class="pmeta">reel · Sun 19 Jul, 8:00 AM</div></div></div>
+  <div class="media">📎 AirDrop: <b>10_f-vibe-split</b> · 1 item · Instagram, Facebook, TikTok, LinkedIn, YT Shorts</div>
+  <div class="tabs"><button class="tab on" onclick="tab(this,'f-vibe-split','instagram')">Instagram</button><button class="tab " onclick="tab(this,'f-vibe-split','tiktok')">TikTok</button><button class="tab " onclick="tab(this,'f-vibe-split','facebook')">Facebook</button><button class="tab " onclick="tab(this,'f-vibe-split','linkedin')">LinkedIn</button><button class="tab " onclick="tab(this,'f-vibe-split','youtube')">YT Shorts</button></div>
+  <div class="pane on" data-post="f-vibe-split" data-plat="instagram"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Old way on the left. New way on the right. Neither person is real.
+
+Problem-and-solution splits are one of the highest-converting ad formats going, and we build them start to finish. Both rooms, both takes, one product, zero shoots.
+
+See more at aurianhaus.com<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #productads #ecommercemarketing #UGCads #aurianhaus<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-vibe-split" data-plat="tiktok"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Old way on the left, new way on the right. Two people who were never filmed.
+
+Made from one product photo. No shoot, no studio.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aiugc #contentcreator #ecommercetips #garmentsteamer #homehacks<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-vibe-split" data-plat="facebook"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Old way on the left. New way on the right. Neither person is real.
+
+Problem-and-solution splits are one of the highest-converting ad formats going, and we build them start to finish. Both rooms, both takes, one product, zero shoots.
+
+See more at aurianhaus.com
+
+See the range → aurianhaus.com<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #garmentsteamer #homehacks<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-vibe-split" data-plat="linkedin"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Split-screen problem and solution is one of the highest-converting ad formats going, and we build it start to finish: both rooms, both takes, one product, zero shoots. Your product as a split that stops the scroll, from a single photo.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #Ecommerce #ContentStrategy<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-vibe-split" data-plat="youtube"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Old way on the left. New way on the right. Neither person is real.
+
+Problem-and-solution splits are one of the highest-converting ad formats going, and we build them start to finish. Both rooms, both takes, one product, zero shoots.
+
+See more at aurianhaus.com
+
+#Shorts<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#Shorts #garmentsteamer #homehacks<span class="cpbtn">copy</span></div></div>
+  <div class="fieldlab">First comment</div><div class="copybox" onclick="cp(this)">#AIcontent #productads #ecommercemarketing #UGCads #aurianhaus<span class="cpbtn">copy</span></div>
+  <details class="alts"><summary>Alt text · 1 slides</summary><div class="altrow"><span class="altn">1</span><div class="copybox sm" onclick="cp(this)">Split screen: man ironing a shirt vs smiling with a handheld garment steamer, old vs new<span class="cpbtn">copy</span></div></div></details>
+</div><div class="card">
+  <div class="chead"><span class="num">11</span><div><div class="ptitle">feed-sol-lifestyle</div><div class="pmeta">image · Sun 19 Jul, 12:30 PM</div></div></div>
+  <div class="media">📎 AirDrop: <b>11_feed-sol-lifestyle</b> · 1 item · Instagram, Facebook, TikTok, LinkedIn</div>
+  <div class="tabs"><button class="tab on" onclick="tab(this,'feed-sol-lifestyle','instagram')">Instagram</button><button class="tab " onclick="tab(this,'feed-sol-lifestyle','tiktok')">TikTok</button><button class="tab " onclick="tab(this,'feed-sol-lifestyle','facebook')">Facebook</button><button class="tab " onclick="tab(this,'feed-sol-lifestyle','linkedin')">LinkedIn</button></div>
+  <div class="pane on" data-post="feed-sol-lifestyle" data-plat="instagram"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Morning in a marble kitchen that doesn&#x27;t exist.
+
+Lifestyle content with a real person&#x27;s warmth, from a single product photo. The shot that makes a product feel owned, not advertised.
+
+Food, drink, wellness, this is your everyday content<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AurianHaus #lifestylecontent #AIUGC #ecommercemarketing #productads<span class="cpbtn">copy</span></div></div><div class="pane " data-post="feed-sol-lifestyle" data-plat="tiktok"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Morning, made in a marble kitchen that does not exist.
+
+Made from one product photo. No shoot, no studio.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aiugc #contentcreator #ecommercetips #portableblender #smoothietok<span class="cpbtn">copy</span></div></div><div class="pane " data-post="feed-sol-lifestyle" data-plat="facebook"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Morning in a marble kitchen that doesn&#x27;t exist.
+
+Lifestyle content with a real person&#x27;s warmth, from a single product photo. The shot that makes a product feel owned, not advertised.
+
+Food, drink, wellness, this is your everyday content
+
+See the range → aurianhaus.com<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #portableblender #smoothietok<span class="cpbtn">copy</span></div></div><div class="pane " data-post="feed-sol-lifestyle" data-plat="linkedin"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Lifestyle content with a real person&#x27;s warmth, generated from a product photo. The in-context shot that makes a product feel owned, not sold, for food, drink and wellness brands.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #Ecommerce #ContentStrategy<span class="cpbtn">copy</span></div></div>
+  <div class="fieldlab">First comment</div><div class="copybox" onclick="cp(this)">#AurianHaus #lifestylecontent #AIUGC #ecommercemarketing #productads<span class="cpbtn">copy</span></div>
+  <details class="alts"><summary>Alt text · 1 slides</summary><div class="altrow"><span class="altn">1</span><div class="copybox sm" onclick="cp(this)">Woman in white dropping fresh berries into a cream and gold AURIAN portable blender in a bright kitchen<span class="cpbtn">copy</span></div></div></details>
+</div><div class="card">
+  <div class="chead"><span class="num">12</span><div><div class="ptitle">f-belt-glow</div><div class="pmeta">reel · Sun 19 Jul, 5:00 PM</div></div></div>
+  <div class="media">📎 AirDrop: <b>12_f-belt-glow</b> · 1 item · Instagram, Facebook, TikTok, LinkedIn, YT Shorts</div>
+  <div class="tabs"><button class="tab on" onclick="tab(this,'f-belt-glow','instagram')">Instagram</button><button class="tab " onclick="tab(this,'f-belt-glow','tiktok')">TikTok</button><button class="tab " onclick="tab(this,'f-belt-glow','facebook')">Facebook</button><button class="tab " onclick="tab(this,'f-belt-glow','linkedin')">LinkedIn</button><button class="tab " onclick="tab(this,'f-belt-glow','youtube')">YT Shorts</button></div>
+  <div class="pane on" data-post="f-belt-glow" data-plat="instagram"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Lit from the inside, shot like jewellery.
+
+The glow, the quilting, the gold detail, all generated. The quiet hero frame every wellness brand needs for the feed or a story.
+
+All of it starts with one reference photo<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #productads #ecommercemarketing #UGCads #aurianhaus<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-belt-glow" data-plat="tiktok"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Lit from the inside. A red-light therapy belt, shot like jewellery.
+
+Made from one product photo. No shoot, no studio.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aiugc #contentcreator #ecommercetips #redlighttherapy #wellnesstech<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-belt-glow" data-plat="facebook"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Lit from the inside, shot like jewellery.
+
+The glow, the quilting, the gold detail, all generated. The quiet hero frame every wellness brand needs for the feed or a story.
+
+All of it starts with one reference photo
+
+See the range → aurianhaus.com<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #redlighttherapy #wellnesstech<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-belt-glow" data-plat="linkedin"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">The glow, the quilting, the gold detail: all generated. The quiet product beat every wellness brand needs for a hero frame or a story, made from one reference photo.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #Ecommerce #ContentStrategy<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-belt-glow" data-plat="youtube"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Lit from the inside, shot like jewellery.
+
+The glow, the quilting, the gold detail, all generated. The quiet hero frame every wellness brand needs for the feed or a story.
+
+All of it starts with one reference photo
+
+#Shorts<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#Shorts #redlighttherapy #wellnesstech<span class="cpbtn">copy</span></div></div>
+  <div class="fieldlab">First comment</div><div class="copybox" onclick="cp(this)">#AIcontent #productads #ecommercemarketing #UGCads #aurianhaus<span class="cpbtn">copy</span></div>
+  <details class="alts"><summary>Alt text · 1 slides</summary><div class="altrow"><span class="altn">1</span><div class="copybox sm" onclick="cp(this)">Woman on a bed holding a glowing red-light-therapy belt at her waist, calm bedroom<span class="cpbtn">copy</span></div></div></details>
+</div><div class="card">
+  <div class="chead"><span class="num">13</span><div><div class="ptitle">feed-belt-intro</div><div class="pmeta">reel · Mon 20 Jul, 8:00 AM</div></div></div>
+  <div class="media">📎 AirDrop: <b>13_feed-belt-intro</b> · 1 item · Instagram, Facebook, TikTok, LinkedIn, YT Shorts</div>
+  <div class="tabs"><button class="tab on" onclick="tab(this,'feed-belt-intro','instagram')">Instagram</button><button class="tab " onclick="tab(this,'feed-belt-intro','tiktok')">TikTok</button><button class="tab " onclick="tab(this,'feed-belt-intro','facebook')">Facebook</button><button class="tab " onclick="tab(this,'feed-belt-intro','linkedin')">LinkedIn</button><button class="tab " onclick="tab(this,'feed-belt-intro','youtube')">YT Shorts</button></div>
+  <div class="pane on" data-post="feed-belt-intro" data-plat="instagram"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">First look at the belt, UGC style.
+
+Phone-real, unscripted, made from one product photo. The kind of reel you can post in week one without booking a single creator.
+
+Want one for your product?<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AurianHaus #UGCads #AIcontent #wellnessbrand #productreel<span class="cpbtn">copy</span></div></div><div class="pane " data-post="feed-belt-intro" data-plat="tiktok"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">A first look at the red-light belt, UGC style. Phone-real, unscripted, generated from one photo.
+
+Made from one product photo. No shoot, no studio.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aiugc #contentcreator #ecommercetips #redlighttherapy #wellnesstech<span class="cpbtn">copy</span></div></div><div class="pane " data-post="feed-belt-intro" data-plat="facebook"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">First look at the belt, UGC style.
+
+Phone-real, unscripted, made from one product photo. The kind of reel you can post in week one without booking a single creator.
+
+Want one for your product?
+
+See the range → aurianhaus.com<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #redlighttherapy #wellnesstech<span class="cpbtn">copy</span></div></div><div class="pane " data-post="feed-belt-intro" data-plat="linkedin"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Phone-real, unscripted intro content a wellness brand can post in week one, generated from a single product photo with no creator booked. The everyday UGC that builds a feed fast.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #Ecommerce #ContentStrategy<span class="cpbtn">copy</span></div></div><div class="pane " data-post="feed-belt-intro" data-plat="youtube"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">First look at the belt, UGC style.
+
+Phone-real, unscripted, made from one product photo. The kind of reel you can post in week one without booking a single creator.
+
+Want one for your product?
+
+#Shorts<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#Shorts #redlighttherapy #wellnesstech<span class="cpbtn">copy</span></div></div>
+  <div class="fieldlab">First comment</div><div class="copybox" onclick="cp(this)">#AurianHaus #UGCads #AIcontent #wellnessbrand #productreel<span class="cpbtn">copy</span></div>
+  <details class="alts"><summary>Alt text · 1 slides</summary><div class="altrow"><span class="altn">1</span><div class="copybox sm" onclick="cp(this)">Woman on a bed in a white tee holding the AURIAN red light therapy belt, UGC unboxing reel<span class="cpbtn">copy</span></div></div></details>
+</div><div class="card">
+  <div class="chead"><span class="num">14</span><div><div class="ptitle">f-sol-clean</div><div class="pmeta">reel · Mon 20 Jul, 12:30 PM</div></div></div>
+  <div class="media">📎 AirDrop: <b>14_f-sol-clean</b> · 1 item · Instagram, Facebook, TikTok, LinkedIn, YT Shorts</div>
+  <div class="tabs"><button class="tab on" onclick="tab(this,'f-sol-clean','instagram')">Instagram</button><button class="tab " onclick="tab(this,'f-sol-clean','tiktok')">TikTok</button><button class="tab " onclick="tab(this,'f-sol-clean','facebook')">Facebook</button><button class="tab " onclick="tab(this,'f-sol-clean','linkedin')">LinkedIn</button><button class="tab " onclick="tab(this,'f-sol-clean','youtube')">YT Shorts</button></div>
+  <div class="pane on" data-post="f-sol-clean" data-plat="instagram"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">The blender review that never happened. No creator, no kitchen, no camera.
+
+Natural phone-real UGC is the workhorse most brands need on repeat, and it&#x27;s the fastest thing we make. One photo in, a review that feels real out.
+
+Comment HAUS for a sample in your niche<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #productads #ecommercemarketing #UGCads #aurianhaus<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-sol-clean" data-plat="tiktok"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">The blender review that never happened. No creator, no kitchen, no camera.
+
+Made from one product photo. No shoot, no studio.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aiugc #contentcreator #ecommercetips #portableblender #smoothietok<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-sol-clean" data-plat="facebook"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">The blender review that never happened. No creator, no kitchen, no camera.
+
+Natural phone-real UGC is the workhorse most brands need on repeat, and it&#x27;s the fastest thing we make. One photo in, a review that feels real out.
+
+Comment HAUS for a sample in your niche
+
+See the range → aurianhaus.com<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#aurianhaus #portableblender #smoothietok<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-sol-clean" data-plat="linkedin"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">Natural, phone-real UGC is the workhorse most brands need on repeat, and it is the fastest thing we make: one product photo in, a real-feeling review out.<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#AIcontent #Ecommerce #ContentStrategy<span class="cpbtn">copy</span></div></div><div class="pane " data-post="f-sol-clean" data-plat="youtube"><div class="fieldlab">Caption</div><div class="copybox" onclick="cp(this)">The blender review that never happened. No creator, no kitchen, no camera.
+
+Natural phone-real UGC is the workhorse most brands need on repeat, and it&#x27;s the fastest thing we make. One photo in, a review that feels real out.
+
+Comment HAUS for a sample in your niche
+
+#Shorts<span class="cpbtn">copy</span></div><div class="fieldlab">Hashtags</div><div class="copybox mono" onclick="cp(this)">#Shorts #portableblender #smoothietok<span class="cpbtn">copy</span></div></div>
+  <div class="fieldlab">First comment</div><div class="copybox" onclick="cp(this)">#AIcontent #productads #ecommercemarketing #UGCads #aurianhaus<span class="cpbtn">copy</span></div>
+  <details class="alts"><summary>Alt text · 1 slides</summary><div class="altrow"><span class="altn">1</span><div class="copybox sm" onclick="cp(this)">Woman in a linen dress holding a cream and gold AURIAN portable blender in a bright kitchen ✨<span class="cpbtn">copy</span></div></div></details>
+</div>
+<script>
+function cp(el){const t=el.cloneNode(true);const b=t.querySelector('.cpbtn');if(b)b.remove();
+  navigator.clipboard.writeText(t.textContent.trim()).then(()=>{el.classList.add('done');const x=el.querySelector('.cpbtn');const o=x.textContent;x.textContent='✓';setTimeout(()=>{el.classList.remove('done');x.textContent=o;},1200);});}
+function tab(btn,post,plat){document.querySelectorAll('.tab').forEach(t=>{if(t.parentNode===btn.parentNode)t.classList.remove('on')});btn.classList.add('on');
+  document.querySelectorAll('.pane[data-post="'+post+'"]').forEach(p=>p.classList.toggle('on',p.dataset.plat===plat));}
+</script>
+</body></html>

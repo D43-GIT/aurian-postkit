@@ -366,25 +366,7 @@ Comment HAUS for a sample in your niche
 <div class="altrow"><span class="altn">1</span><div class="copybox sm" onclick="cp(this)">Woman in a linen dress holding a cream and gold AURIAN portable blender in a bright kitchen ✨<span class="cpbtn">copy</span></div></div>
 </details>
 </div>
-<div class="foot">Updated 18 Jul 2026 · aurianhaus.com</div>
-<script>
-function tab(btn,post,plat){
-  document.querySelectorAll('.pane[data-post="'+post+'"]').forEach(function(p){p.classList.toggle('on',p.dataset.plat===plat)});
-  var tabs=btn.parentElement.querySelectorAll('.tab');
-  tabs.forEach(function(t){t.classList.remove('on')});
-  btn.classList.add('on');
-}
-function cp(box){
-  var clone=box.cloneNode(true);
-  clone.querySelector('.cpbtn').remove();
-  var txt=clone.innerText;
-  navigator.clipboard.writeText(txt).then(function(){
-    box.classList.add('done');
-    box.querySelector('.cpbtn').textContent='copied';
-    setTimeout(function(){box.classList.remove('done');box.querySelector('.cpbtn').textContent='copy'},1400);
-  });
-}
-</script></body></html><div class="card">
+<div class="card">
 <div class="chead">
 <img class="thumb" src="thumbs/07.jpg" alt="" loading="lazy">
 <div><div class="ptitle"><span class="num">07</span> f-somme-calm</div><div class="pmeta">reel</div><div class="badge b-next">Next up · Sun 19 Jul, 9:00 AM</div></div></div>
@@ -558,3 +540,22 @@ Want one on your product?
 <div class="altrow"><span class="altn">1</span><div class="copybox sm" onclick="cp(this)">Woman resting in bed in a white tee, talking to camera, UGC period-cramp relief reel<span class="cpbtn">copy</span></div></div>
 </details>
 </div>
+<div class="foot">Updated 18 Jul 2026 · aurianhaus.com</div>
+<script>
+function tab(btn,post,plat){
+  document.querySelectorAll('.pane[data-post="'+post+'"]').forEach(function(p){p.classList.toggle('on',p.dataset.plat===plat)});
+  var tabs=btn.parentElement.querySelectorAll('.tab');
+  tabs.forEach(function(t){t.classList.remove('on')});
+  btn.classList.add('on');
+}
+function cp(box){
+  var clone=box.cloneNode(true);
+  clone.querySelector('.cpbtn').remove();
+  var txt=clone.innerText;
+  navigator.clipboard.writeText(txt).then(function(){
+    box.classList.add('done');
+    box.querySelector('.cpbtn').textContent='copied';
+    setTimeout(function(){box.classList.remove('done');box.querySelector('.cpbtn').textContent='copy'},1400);
+  });
+}
+</script></body></html>

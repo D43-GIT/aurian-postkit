@@ -1,0 +1,330 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#F2EADA">
+<title>Jurgen &middot; your Instagram, ready to pick</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<style>
+:root{--paper:#F2EADA;--raised:#fbf6ec;--ink:#1a1712;--muted:#6b6152;--brass:#C9A66B;
+--line:#e2d7c2;--good:#3f7d54;--lock:#2f6b8f}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);
+font-family:-apple-system,BlinkMacSystemFont,'Inter Tight',Inter,system-ui,'Segoe UI',Roboto,sans-serif;
+line-height:1.55;padding:24px clamp(12px,4vw,52px) 72px;max-width:940px;margin:auto;
+-webkit-text-size-adjust:100%;overflow-x:hidden}
+h1{font-family:'Fraunces',Georgia,'Times New Roman',serif;font-weight:600;font-size:clamp(26px,6vw,42px);line-height:1.08;margin-bottom:6px}
+h2{font-family:'Fraunces',Georgia,'Times New Roman',serif;font-weight:600;font-size:clamp(20px,4.6vw,28px);line-height:1.15;margin-bottom:6px}
+h3{font-family:'Fraunces',Georgia,'Times New Roman',serif;font-weight:600;font-size:clamp(17px,3.6vw,21px);margin-bottom:4px}
+p{font-size:clamp(14px,3.5vw,15.5px)}
+.stamp{display:inline-block;background:var(--brass);color:#161311;font-family:'JetBrains Mono',ui-monospace,monospace;
+font-size:10px;letter-spacing:.1em;border-radius:20px;padding:4px 12px;margin-bottom:12px}
+.sub{color:var(--muted);font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.06em;
+margin-bottom:20px;line-height:1.7}
+section{margin:0 0 26px}
+.hello{background:var(--raised);border:1px solid var(--brass);border-radius:14px;padding:16px 18px;margin-bottom:26px}
+.hello p{margin-bottom:9px}
+.hello p:last-child{margin-bottom:0}
+.ask{list-style:none;margin:10px 0 0;counter-reset:a}
+.ask li{counter-increment:a;position:relative;padding-left:30px;margin:7px 0;font-size:clamp(14px,3.5vw,15.5px)}
+.ask li::before{content:counter(a);position:absolute;left:0;top:1px;width:21px;height:21px;border-radius:50%;
+background:var(--brass);color:#161311;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;
+display:flex;align-items:center;justify-content:center}
+.card{background:var(--raised);border:1px solid var(--line);border-radius:14px;padding:16px 17px}
+.card.brass{border-left:4px solid var(--brass)}
+ul.dots{margin:10px 0 0 4px;list-style:none}
+ul.dots li{position:relative;padding-left:17px;margin:8px 0;font-size:clamp(13.5px,3.4vw,15px);line-height:1.6}
+ul.dots li::before{content:"";position:absolute;left:2px;top:9px;width:6px;height:6px;border-radius:50%;background:var(--brass)}
+.phone{background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px 15px 13px;max-width:390px;
+margin:14px auto 0;box-shadow:0 1px 0 #e8dcc6}
+.phead{display:flex;align-items:center;gap:11px;margin-bottom:11px}
+.av{width:52px;height:52px;border-radius:50%;background:linear-gradient(140deg,#d8bd8a,#b8935a);flex:0 0 auto;
+display:flex;align-items:center;justify-content:center;font-family:'Fraunces',Georgia,serif;color:#fff;font-size:19px}
+.handle{font-size:14px;font-weight:650}
+.pmeta{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;color:var(--muted);letter-spacing:.05em}
+.pname{font-size:13.5px;font-weight:700;margin-bottom:2px}
+.pbio{font-size:13.5px;white-space:pre-wrap;word-break:break-word;line-height:1.5}
+.plink{font-size:13.5px;color:#2f6b8f;font-weight:600;margin-top:4px;word-break:break-word}
+.livetag{display:inline-block;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9px;font-weight:700;
+letter-spacing:.09em;background:var(--lock);color:#fff;border-radius:20px;padding:3px 10px;vertical-align:middle;margin-left:7px}
+.opt{border:1px solid var(--line);border-left:3px solid var(--line);border-radius:11px;padding:11px 12px;
+margin:11px 0;background:#fffdf8}
+.opt.rec{border-color:var(--good);border-left-color:var(--good);background:#f6f9f3}
+.olab{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+color:var(--muted);margin-bottom:6px}
+.star{background:var(--good);color:#fff;border-radius:20px;padding:2px 8px;font-size:8.5px;font-weight:700;
+margin-right:6px;letter-spacing:.06em}
+.field{margin:7px 0}
+.lab{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;
+color:var(--brass);margin-bottom:5px}
+.cc{color:var(--muted)}
+.spare{color:var(--good)}
+.val{position:relative;background:#fff;border:1px solid var(--line);border-radius:9px;
+padding:11px 60px 11px 12px;font-size:clamp(13px,3.4vw,13.5px);white-space:pre-wrap;word-break:break-word;line-height:1.5}
+.val.mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px}
+.cp{position:absolute;top:7px;right:7px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9px;
+font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#161311;background:var(--brass);border:none;
+border-radius:7px;padding:7px 10px;cursor:pointer;min-height:30px}
+.cp:hover{background:#b8935a}.cp.done{background:var(--good);color:#fff}
+.why{font-size:clamp(12px,3.1vw,12.5px);color:var(--muted);margin-top:7px;line-height:1.6}
+.note{font-size:clamp(12.5px,3.2vw,13px);color:var(--muted);background:#fffdf8;border:1px dashed var(--line);
+border-radius:10px;padding:10px 12px;margin-top:12px;line-height:1.6}
+.note b{color:var(--ink)}
+.cur{border:1px dashed var(--line);border-radius:10px;padding:9px 11px;margin:11px 0}
+.curlab{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9px;letter-spacing:.08em;text-transform:uppercase;
+color:#9a8f7c;margin-right:6px}
+.curline{color:#9a8f7c;text-decoration:line-through;font-size:12.5px;white-space:pre-wrap;word-break:break-word;margin:3px 0}
+.foot{font-size:11.5px;color:var(--muted);margin-top:30px;line-height:1.8;border-top:1px solid var(--line);padding-top:14px}
+@media(min-width:820px){.two{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}}
+
+/* ---- selectable options ---- */
+.opt[data-pick]{cursor:pointer;-webkit-tap-highlight-color:transparent;transition:border-color .12s,background .12s}
+.opt[data-pick]:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+.olab{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.dot{width:19px;height:19px;border-radius:50%;border:2px solid #cdbfa3;background:#fff;
+flex:0 0 auto;display:flex;align-items:center;justify-content:center}
+.dot::after{content:"";width:9px;height:9px;border-radius:50%;background:transparent;transition:background .12s}
+.opt.sel{border-color:var(--brass);border-left-color:var(--brass);background:#fbf3e3;
+box-shadow:0 0 0 2px rgba(201,166,107,.35)}
+.opt.sel .dot{border-color:var(--brass)}
+.opt.sel .dot::after{background:var(--brass)}
+.opt.sel .olab{color:var(--ink)}
+.picked{display:none;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9px;font-weight:700;
+letter-spacing:.09em;background:var(--brass);color:#161311;border-radius:20px;padding:3px 9px;margin-left:auto}
+.opt.sel .picked{display:inline-block}
+
+/* ---- answer collector ---- */
+.tapme{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;letter-spacing:.05em;
+color:var(--muted);background:#fffdf8;border:1px dashed var(--brass);border-radius:9px;padding:9px 12px;margin:10px 0 4px}
+.sumrow{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);align-items:flex-start}
+.sumk{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9.5px;letter-spacing:.1em;color:var(--brass);
+flex:0 0 46px;padding-top:3px}
+.sumv{flex:1;font-size:13.5px;white-space:pre-wrap;word-break:break-word;line-height:1.5}
+.sumv.empty{color:#a9a091;font-style:italic}
+.tog{display:flex;align-items:center;gap:11px;background:#fffdf8;border:1px solid var(--line);border-radius:11px;
+padding:13px 14px;margin:14px 0 0;cursor:pointer;font-size:14px;min-height:52px}
+.tog.on{border-color:var(--good);background:#f2f7f1}
+.tog .box{width:24px;height:24px;border-radius:7px;border:2px solid #cdbfa3;background:#fff;flex:0 0 auto;
+display:flex;align-items:center;justify-content:center;font-size:14px;color:#fff;font-weight:700}
+.tog.on .box{background:var(--good);border-color:var(--good)}
+.tog.on .box::after{content:"\2713"}
+textarea#note{width:100%;margin-top:12px;min-height:88px;background:#fff;border:1px solid var(--line);
+border-radius:11px;padding:12px;font-family:inherit;font-size:15px;line-height:1.5;color:var(--ink);resize:vertical}
+textarea#note:focus{outline:none;border-color:var(--brass);box-shadow:0 0 0 2px rgba(201,166,107,.3)}
+#send{width:100%;margin-top:16px;background:var(--brass);color:#161311;border:none;border-radius:12px;
+padding:19px 16px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:14px;font-weight:700;
+letter-spacing:.09em;cursor:pointer;min-height:58px}
+#send:active{transform:translateY(1px)}
+#send.done{background:var(--good);color:#fff}
+#send[disabled]{background:#e3d9c6;color:#9a8f7c;cursor:default}
+.fb{display:none;margin-top:12px}
+.fb.on{display:block}
+textarea#fbtext{width:100%;min-height:190px;background:#fff;border:1px solid var(--brass);border-radius:11px;
+padding:12px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;line-height:1.6;color:var(--ink)}
+.final{background:var(--raised);border:1px solid var(--brass);border-radius:12px;padding:14px 16px;margin-top:16px;
+font-size:clamp(14px,3.5vw,15.5px)}
+</style></head><body>
+
+<div class="stamp">FOR JURGEN &middot; 20 JUL 2026</div>
+<h1>Your Instagram, ready to pick</h1>
+<div class="sub">FIVE NAMES &middot; FIVE BIOS &middot; ONE LINK &middot; EVERY LENGTH MEASURED, NOT GUESSED</div>
+
+<div class="hello">
+<p>Jurgen, mine is done and live. Yours is the last thing left before we start posting, and it is
+three quick decisions rather than a job. Everything below is already written and already checked to
+fit, so you are choosing, not writing.</p>
+<ol class="ask">
+<li>Pick a <b>name field</b> (the bold line at the top of your profile).</li>
+<li>Pick a <b>bio</b> (the few lines underneath it).</li>
+<li>Confirm the <b>link</b> is right.</li>
+<li>Hit <b>Copy my answers</b> at the bottom and paste it to me. Then we go.</li>
+</ol>
+</div>
+
+<section><h2>What I locked, and why</h2>
+<p style="color:var(--muted);font-size:14px">This is my profile exactly as it reads right now. Yours does not have to copy it, but this is the shape that we agreed on.</p>
+<div class="phone"><div class="phead"><div class="av">BH</div><div><div class="handle">imbrandonkh <span class="livetag">LIVE</span></div><div class="pmeta">INSTAGRAM PROFILE</div></div></div>
+<div class="pname">Brandon Hansen | Film &amp; AI</div>
+<div class="pbio">➢ Co-founder @aurianhaus | Ad creative, no shoot day
+➢ @bkhmediaagency | 50M+ client views
+➢ Film, AI ads, organic social | Gold Coast
+↓ Work with me</div>
+<div class="plink">aurianhaus.com/@brandonhansen</div>
+<div class="pmeta" style="margin-top:10px">NAME 26/30 &middot; BIO 149/150</div></div>
+<div class="card brass" style="margin-top:16px"><ul class="dots">
+<li>Aurian Haus is the first thing on the page, so a stranger knows the business before they know the man.</li>
+<li>The 50M+ client views number does the selling. No adjectives, just a figure anyone can check.</li>
+<li>All three sides of the work sit on one line: film, AI ads, organic social.</li>
+<li>The last line tells you what to do next, and the link underneath is the door.</li>
+</ul></div></section>
+<section><h2>The research, short version</h2><div class="card"><ul class="dots">
+<li>The <b>name field</b> is the main thing Instagram's own search reads, so it should carry what you do, not just who you are.</li>
+<li>The <b>bio</b> is what people read, and what Google reads. Google has been indexing public professional accounts since July 2025, so the words in there do work outside Instagram.</li>
+<li>Nobody has real proof that a 'work with me' line lifts clicks. Every number floating around traces back to a marketing blog with no study behind it. Treat it as a test we judge on our own numbers.</li>
+<li>Instagram lets you add several links but <b>only shows the first one</b>, and native links give you no click data. One link we can measure beats five nobody sees.</li>
+<li>The word 'premium' is deliberately avoided. A self-applied adjective reads as claiming. A number, a client name or a phone number reads as proving.</li>
+</ul></div></section>
+<section><h2>Your options, Jurgen</h2>
+<p style="color:var(--muted);font-size:14px">Your order is locked already: cinematography leads, then Aurian Haus, then Jurgen Production House, then luxury real estate and lifestyle work, Gold Coast, and your number stays public. What is open is which wording. Tap Copy rather than retyping, so nothing gets lost.</p>
+<div class="cur"><div class="curline"><span class="curlab">Name now</span>Jurgen Hansen | Videographer</div><div class="curline"><span class="curlab">Bio now</span>🏝- Gold Coast 📸 - Video production / photography/ @jurgen_production_house</div></div>
+<h3 style="margin-top:20px">Name field &middot; pick one of five</h3>
+<p class="why">The cap is 30 characters. Every option below leaves at least 2 spare on purpose, so a paste can never get chopped.</p>
+<div class="tapme">TAP AN OPTION TO CHOOSE IT. IT SAVES ITSELF, EVEN IF YOU CLOSE THE PAGE.</div>
+<div class="opt rec" data-pick="name" data-idx="0" role="radio" aria-checked="false" tabindex="0" aria-label="Name option 1"><div class="olab"><span class="dot"></span><span class="star">&#9733; MY PICK</span>Name 1<span class="picked">CHOSEN</span></div>
+<div class="field"><div class="lab">Name <span class="cc">27/30</span> <span class="spare">3 spare</span></div><div class="val" id="f1">Jurgen Hansen | Luxury Film<button class="cp" onclick="cp('f1',this)">Copy</button></div></div>
+<div class="why">Broadest option. Covers property and brand work in one word, and 'luxury' is the tier without claiming it.</div></div>
+<div class="opt" data-pick="name" data-idx="1" role="radio" aria-checked="false" tabindex="0" aria-label="Name option 2"><div class="olab"><span class="dot"></span>Name 2<span class="picked">CHOSEN</span></div>
+<div class="field"><div class="lab">Name <span class="cc">28/30</span> <span class="spare">2 spare</span></div><div class="val" id="f2">Jurgen Hansen | Film &amp; Photo<button class="cp" onclick="cp('f2',this)">Copy</button></div></div>
+<div class="why">Widest net. Says you shoot both, which catches the agent searching for either.</div></div>
+<div class="opt" data-pick="name" data-idx="2" role="radio" aria-checked="false" tabindex="0" aria-label="Name option 3"><div class="olab"><span class="dot"></span>Name 3<span class="picked">CHOSEN</span></div>
+<div class="field"><div class="lab">Name <span class="cc">27/30</span> <span class="spare">3 spare</span></div><div class="val" id="f3">Jurgen Hansen | Property GC<button class="cp" onclick="cp('f3',this)">Copy</button></div></div>
+<div class="why">Puts Gold Coast in the part Instagram actually searches. Sharpest for local real estate agents.</div></div>
+<div class="opt" data-pick="name" data-idx="3" role="radio" aria-checked="false" tabindex="0" aria-label="Name option 4"><div class="olab"><span class="dot"></span>Name 4<span class="picked">CHOSEN</span></div>
+<div class="field"><div class="lab">Name <span class="cc">26/30</span> <span class="spare">4 spare</span></div><div class="val" id="f4">J. Hansen | Cinematography<button class="cp" onclick="cp('f4',this)">Copy</button></div></div>
+<div class="why">The only one that fits the full craft word. Costs you the first name in the searchable field.</div></div>
+<div class="opt" data-pick="name" data-idx="4" role="radio" aria-checked="false" tabindex="0" aria-label="Name option 5"><div class="olab"><span class="dot"></span>Name 5<span class="picked">CHOSEN</span></div>
+<div class="field"><div class="lab">Name <span class="cc">26/30</span> <span class="spare">4 spare</span></div><div class="val" id="f5">Jurgen Hansen | Brand Film<button class="cp" onclick="cp('f5',this)">Copy</button></div></div>
+<div class="why">Leans towards the brand and lifestyle side, which is where Aurian Haus work comes from.</div></div>
+<div class="note"><b>Gold Coast is your call.</b> I kept it out of my name field and put it in the bio, because my buyers are not searching by suburb. Yours are. If most of your work comes from local agents, Name 3 is the one that puts it where Instagram searches.</div>
+<h3 style="margin-top:26px">Bio &middot; pick one of five</h3>
+<p class="why">The cap is 150 characters including the line breaks. Same rule, every option leaves at least 2 spare.</p>
+<div class="opt rec" data-pick="bio" data-idx="0" role="radio" aria-checked="false" tabindex="0" aria-label="Bio option 1"><div class="olab"><span class="dot"></span><span class="star">&#9733; MY PICK</span>Bio 1<span class="picked">CHOSEN</span></div>
+<div class="field"><div class="lab">Bio <span class="cc">128/150</span> <span class="spare">22 spare</span></div><div class="val" id="f6">➢ Cinematography for luxury property + brand film
+➢ Co-founder @aurianhaus
+➢ @jurgen_production_house, Gold Coast
+➢ 0426 573 420<button class="cp" onclick="cp('f6',this)">Copy</button></div></div>
+<div class="why">Your order exactly: craft, then Aurian Haus, then Jurgen Production House, then how to reach you.</div></div>
+<div class="opt" data-pick="bio" data-idx="1" role="radio" aria-checked="false" tabindex="0" aria-label="Bio option 2"><div class="olab"><span class="dot"></span>Bio 2<span class="picked">CHOSEN</span></div>
+<div class="field"><div class="lab">Bio <span class="cc">132/150</span> <span class="spare">18 spare</span></div><div class="val" id="f7">➢ Cinematography. Luxury real estate + lifestyle film
+➢ Co-founder @aurianhaus
+➢ @jurgen_production_house, Gold Coast
+➢ 0426 573 420<button class="cp" onclick="cp('f7',this)">Copy</button></div></div>
+<div class="why">Same order, but it spells out lifestyle so a brand client sees themselves in it.</div></div>
+<div class="opt" data-pick="bio" data-idx="2" role="radio" aria-checked="false" tabindex="0" aria-label="Bio option 3"><div class="olab"><span class="dot"></span>Bio 3<span class="picked">CHOSEN</span></div>
+<div class="field"><div class="lab">Bio <span class="cc">123/150</span> <span class="spare">27 spare</span></div><div class="val" id="f8">➢ Cinematography for luxury homes and brands
+➢ Co-founder @aurianhaus
+➢ @jurgen_production_house
+➢ Gold Coast. 0426 573 420<button class="cp" onclick="cp('f8',this)">Copy</button></div></div>
+<div class="why">Plainest wording, no plus signs. Phone sits on its own line with the location.</div></div>
+<div class="opt" data-pick="bio" data-idx="3" role="radio" aria-checked="false" tabindex="0" aria-label="Bio option 4"><div class="olab"><span class="dot"></span>Bio 4<span class="picked">CHOSEN</span></div>
+<div class="field"><div class="lab">Bio <span class="cc">141/150</span> <span class="spare">9 spare</span></div><div class="val" id="f9">➢ Cinematography, luxury property + brand film
+➢ Co-founder @aurianhaus | @jurgen_production_house
+➢ Gold Coast | 0426 573 420
+↓ See the work<button class="cp" onclick="cp('f9',this)">Copy</button></div></div>
+<div class="why">The only one with a next step on the last line, matching Brandon's. Both companies share a line to pay for it.</div></div>
+<div class="opt" data-pick="bio" data-idx="4" role="radio" aria-checked="false" tabindex="0" aria-label="Bio option 5"><div class="olab"><span class="dot"></span>Bio 5<span class="picked">CHOSEN</span></div>
+<div class="field"><div class="lab">Bio <span class="cc">109/150</span> <span class="spare">41 spare</span></div><div class="val" id="f10">➢ Luxury property + lifestyle cinematography
+➢ Co-founder @aurianhaus, Gold Coast
+➢ Call or text 0426 573 420<button class="cp" onclick="cp('f10',this)">Copy</button></div></div>
+<div class="why">Shortest. Three lines read faster on a phone, and it makes the phone number the obvious action.</div></div>
+<div class="note">Your phone number survives every single option. For a local agent deciding at 9pm, it is the most valuable thing in the whole bio, so nothing gets to push it out.</div>
+</section>
+<section><h2>Your link</h2><div class="card brass">
+<div class="field"><div class="lab">Link</div><div class="val mono" id="f11">https://aurianhaus.com/@jurgenhansen<button class="cp" onclick="cp('f11',this)">Copy</button></div></div>
+<div class="why">Already live. Open it on your phone and check it looks right, that is the only thing I need you to actually test.</div>
+<div class="note"><b>Leave the link title blank.</b> Instagram lets you type a label over the top of a link, like "Portfolio". Do not. If you leave it empty the address itself shows, so people see <b>aurianhaus.com/@jurgenhansen</b> and know it is our own site rather than some free link tool. That is worth more than a tidy word.</div>
+</div></section>
+<section><h2>What happens next</h2><div class="card"><ul class="dots"><li>You tap your two picks above, hit the big button below, and paste it to me.</li><li>We put them live and post the launch stories on both accounts on the same day, so it lands as one thing rather than two.</li><li>Facebook and LinkedIn get sorted after that. Personal pages there matter less right now, so they are not worth holding this up for.</li></ul></div></section>
+<section id="answers"><h2>Send me your answers</h2><p style="color:var(--muted);font-size:14px">Whatever you tapped above shows up here. Check it reads right, add a note if you want, then hit the button and paste it to me.</p><div class="card brass" style="margin-top:14px">
+<div class="sumrow"><div class="sumk">NAME</div><div class="sumv empty" id="sumName">nothing picked yet</div></div>
+<div class="sumrow"><div class="sumk">BIO</div><div class="sumv empty" id="sumBio">nothing picked yet</div></div>
+<div class="sumrow" style="border-bottom:none"><div class="sumk">LINK</div><div class="sumv">aurianhaus.com/@jurgenhansen</div></div>
+<div class="tog" id="linktog" role="checkbox" aria-checked="false" tabindex="0"><span class="box"></span><span>Yes, I opened the link and it is right</span></div>
+<textarea id="note" placeholder="Anything you want to say? Optional."></textarea>
+<button id="send" type="button">COPY MY ANSWERS</button>
+<div class="fb" id="fb"><p class="why" style="margin-bottom:7px">Your phone would not let me copy it for you. Press and hold in the box, choose Select All, then Copy.</p><textarea id="fbtext" readonly></textarea></div>
+<div class="final">Now paste it to me in <b>iMessage</b>. That is the whole job done.</div>
+</div></section>
+<div class="foot"><b>How the numbers on this page were checked.</b> Every string was measured by the page builder, not counted by hand. 12 strings measured, 0 over cap, 0 with less than 2 characters spare, 0 em or en dashes. Instagram name cap 30, bio cap 150.</div>
+<script>
+const D={"names": ["Jurgen Hansen | Luxury Film", "Jurgen Hansen | Film & Photo", "Jurgen Hansen | Property GC", "J. Hansen | Cinematography", "Jurgen Hansen | Brand Film"], "bios": ["\u27a2 Cinematography for luxury property + brand film\n\u27a2 Co-founder @aurianhaus\n\u27a2 @jurgen_production_house, Gold Coast\n\u27a2 0426 573 420", "\u27a2 Cinematography. Luxury real estate + lifestyle film\n\u27a2 Co-founder @aurianhaus\n\u27a2 @jurgen_production_house, Gold Coast\n\u27a2 0426 573 420", "\u27a2 Cinematography for luxury homes and brands\n\u27a2 Co-founder @aurianhaus\n\u27a2 @jurgen_production_house\n\u27a2 Gold Coast. 0426 573 420", "\u27a2 Cinematography, luxury property + brand film\n\u27a2 Co-founder @aurianhaus | @jurgen_production_house\n\u27a2 Gold Coast | 0426 573 420\n\u2193 See the work", "\u27a2 Luxury property + lifestyle cinematography\n\u27a2 Co-founder @aurianhaus, Gold Coast\n\u27a2 Call or text 0426 573 420"], "link": "aurianhaus.com/@jurgenhansen", "date": "20 Jul"};
+const KEY='jurgen-picks-v1';
+let S={name:null,bio:null,link:false,note:''};
+try{const r=localStorage.getItem(KEY); if(r) S=Object.assign(S,JSON.parse(r)||{});}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+
+function writeClip(text){
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    return navigator.clipboard.writeText(text);
+  }
+  return Promise.reject(new Error('no clipboard api'));
+}
+
+function cp(id,btn){
+  const el=document.getElementById(id).cloneNode(true);
+  const b=el.querySelector('.cp'); if(b) b.remove();
+  const t=btn.textContent;
+  writeClip(el.textContent).then(function(){
+    btn.textContent='Copied \u2713'; btn.classList.add('done');
+    setTimeout(function(){btn.textContent=t;btn.classList.remove('done');},1400);
+  }).catch(function(){ btn.textContent='Select it'; setTimeout(function(){btn.textContent=t;},1600); });
+}
+
+function render(){
+  document.querySelectorAll('[data-pick]').forEach(function(el){
+    const on = S[el.dataset.pick] === Number(el.dataset.idx);
+    el.classList.toggle('sel',on);
+    el.setAttribute('aria-checked', on?'true':'false');
+  });
+  const n=document.getElementById('sumName'), b=document.getElementById('sumBio');
+  if(S.name==null){ n.textContent='nothing picked yet'; n.classList.add('empty'); }
+  else { n.textContent=D.names[S.name]; n.classList.remove('empty'); }
+  if(S.bio==null){ b.textContent='nothing picked yet'; b.classList.add('empty'); }
+  else { b.textContent=D.bios[S.bio]; b.classList.remove('empty'); }
+  const t=document.getElementById('linktog');
+  t.classList.toggle('on', !!S.link);
+  t.setAttribute('aria-checked', S.link?'true':'false');
+  document.getElementById('send').disabled = (S.name==null || S.bio==null);
+}
+
+function message(){
+  let o = "Jurgen's picks, "+D.date+"\n";
+  o += "NAME: "+D.names[S.name]+"\n";
+  o += "BIO:\n"+D.bios[S.bio]+"\n";
+  o += "LINK: "+D.link+(S.link ? " (confirmed)" : " (not confirmed yet)");
+  const nt=(S.note||'').trim();
+  if(nt) o += "\nNOTE: "+nt;
+  return o;
+}
+
+function pick(el){
+  S[el.dataset.pick] = Number(el.dataset.idx);
+  save(); render();
+}
+
+document.querySelectorAll('[data-pick]').forEach(function(el){
+  el.addEventListener('click', function(e){ if(e.target.closest('.cp')) return; pick(el); });
+  el.addEventListener('keydown', function(e){
+    if(e.key==='Enter'||e.key===' '){ e.preventDefault(); pick(el); }
+  });
+});
+
+const tog=document.getElementById('linktog');
+function flip(){ S.link=!S.link; save(); render(); }
+tog.addEventListener('click', flip);
+tog.addEventListener('keydown', function(e){
+  if(e.key==='Enter'||e.key===' '){ e.preventDefault(); flip(); }
+});
+
+const note=document.getElementById('note');
+note.value = S.note || '';
+note.addEventListener('input', function(){ S.note=note.value; save(); });
+
+const send=document.getElementById('send');
+send.addEventListener('click', function(){
+  if(S.name==null || S.bio==null) return;
+  const text=message();
+  writeClip(text).then(function(){
+    send.textContent='COPIED \u2713  NOW PASTE IT TO BRANDON';
+    send.classList.add('done');
+    setTimeout(function(){ send.textContent='COPY MY ANSWERS'; send.classList.remove('done'); },4000);
+  }).catch(function(){
+    const fb=document.getElementById('fb'), ta=document.getElementById('fbtext');
+    ta.value=text; fb.classList.add('on'); ta.focus(); ta.setSelectionRange(0,ta.value.length);
+    send.textContent='COPY IT FROM THE BOX BELOW';
+    setTimeout(function(){ send.textContent='COPY MY ANSWERS'; },4000);
+  });
+});
+
+render();
+</script>
+</body></html>
